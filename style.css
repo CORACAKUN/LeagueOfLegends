@@ -1,0 +1,531 @@
+body{
+
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header{
+    height: 100vh;
+    /* border: solid 1px red; */
+    position: relative;
+    overflow-y:  hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.bg-video{
+    height: 110%;
+    overflow: hidden;
+    position: absolute;
+    z-index: -999;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+header nav{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: black;
+    z-index: 9999;
+}
+
+header nav div{
+    /* border: solid 1px red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav .mid-nav{
+    width: 800px;
+}
+
+header nav .mid-nav a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    /* border: solid 1px red; */
+}
+
+header nav .right-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+header nav .right-nav a .searchBtn{
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+    background-color: rgba(110, 107, 107, 0.377);
+    padding: 5px;
+    border-radius: 15px;
+}
+header nav .right-nav a .languageBtn{
+    height: 20px;
+    width: 20px;
+}
+header nav .right-nav .playNow{
+    background-color: rgb(0, 178, 207);
+    padding: 7px 20px;
+    border-radius: 10px;
+}
+
+header section{
+    /* border: solid 1px red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+header section img{
+    height: 125px;
+}
+header section a{
+    background-color: rgb(211, 187, 138);
+    color: black;
+    text-decoration: none;
+    padding: 20px 50px;
+    outline: solid 2px white;
+    font-family: sans-serif;
+    outline-offset: 2px;
+}
+
+main{
+
+}
+main .feature-news{
+    flex-direction: column;
+}
+main section{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    /* padding: 50px 0; */
+}
+main section .news-cont, .champion{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.gameUpdate{
+    /* border: solid 1px red; */
+    display: flex;
+    align-items: center;
+}
+main section .news-cont img{
+    width: 100%;
+}
+main section .news-cont .fn-1{
+    width: 400px;
+    /* padding: 10px; */
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+}
+main section .news-cont .fn-1> *{
+    /* border: solid 1px red; */
+    margin: 0;
+    font-family: sans-serif;
+}
+main section .news-cont .fn-1 .description{
+    margin-top: 10px;
+}
+
+main .champion{
+    /* border: solid 1px red; */
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+}
+.champion-cont{
+}
+
+.champion .desc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 600px;
+    gap: 20px;
+}
+.champion .desc > *{
+    margin: auto;
+    
+}
+.desc .roles{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.chooseChamp{
+    font-size: 20px !important;
+}
+.roles > *{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+}
+.desc h1{
+    font-size: 60px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
+.desc p{
+    text-align: center;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.desc .a-btn{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.desc .a-btn a{
+    color: black;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 20px 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.a-btn .discoverBtn{
+    background-color: rgb(211, 187, 139);
+}
+.a-btn .playBtn{
+    background-color: rgb(114, 202, 227);
+}
+.roles div{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+    font-size: 14px;
+}
+
+.champion-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.champion-cont img{
+    width: 550px;
+}
+
+main .champion2{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+.champion2 .bg-img{
+    width: 110vw;
+    position: absolute;
+    z-index: -9999;
+}
+
+.champion2 .champAkali img{
+    width: 600px;
+}
+.champion2 .akaliDesc{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.akaliDesc{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.akaliDesc > *{
+    margin: 0;
+}
+.akaliDesc h2, h1{
+    font-style: italic;
+}
+.akaliDesc h1{
+    font-size: 80px;
+}
+.akaliDesc p{
+    font-size: 18px;
+}
+.akaliDesc a{
+    background-color: rgb(238, 198, 119);
+    padding: 20px 50px;
+    width: fit-content;
+    margin-top: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+main .champ2{
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: solid 1px red; */
+    overflow: hidden;
+    padding-top: 50px;
+}
+/* .mult-plays > *{
+    margin: 0;
+} */
+.bg-img2{
+    width: 110vw;
+    filter: brightness(20%);
+    position: absolute;
+    z-index: -99;
+}
+.mult-plays{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
+
+}
+.gameplay{
+    /* border: solid 1px red; */
+}
+
+.mult-plays h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:300;
+}
+.mult-plays h1{
+    font-size: 80px;
+    font-style: italic;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.mult-plays p{
+    font: 16px sans-serif;
+}
+.mult-plays a{
+    background-color: rgb(211, 187, 139);
+    padding: 20px 50px;
+    width: fit-content;
+    margin-top: 50px;
+    text-decoration: none;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.gameTypes{
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+}
+.gameTypes div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.gameTypes div img{
+}
+
+.gameplay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 800px;
+    text-align: center;
+    padding: 25px;
+}
+.gameplay video{
+    height: 500px;
+    border-radius: 50%;
+    outline: solid 1px goldenrod;
+    outline-offset: 20px;
+}
+.gameplay h1{
+    margin-top: 80px;
+    font-style: italic;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.gameplay p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+}
+
+main .mainFooter{
+    position: relative;
+
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+}
+.mainFooter .bgVideo{
+    position: absolute;
+    height: 100vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -3;
+}
+.mainFooter a{
+    background-color: rgb(219, 174, 84);
+    text-decoration: none;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 20px 30px;
+}
+
+footer{
+
+    background-color: rgb(17, 17, 17);
+    padding-bottom: 100px;
+}
+footer .about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgb(41, 41, 41);
+    padding: 25px;
+}
+.about a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+.about a:hover{
+    background-color: rgba(87, 84, 84, 0.685);
+}
+
+footer .lastFooter{
+    background-color: rgb(17, 17, 17);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 25px;
+}
+.lastFooter svg{
+    background-color: rgba(87, 84, 84, 0.685);
+    padding: 5px;
+    border-radius: 10px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+.brand svg{
+    fill: rgba(87, 84, 84, 0.685);
+}
+.comInfo p{
+    color: rgba(126, 122, 122, 0.685);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    margin: 10px 350px;
+    text-align: center;
+}
+.footerLinks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.footerLinks a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+.footerLinks a:hover{
+    background-color: rgba(87, 84, 84, 0.685);
+}
+@media screen and (max-width: 1008px){
+    .mid-nav{
+        display: none;
+    }
+    header{
+        height: 70vh;
+    }
+    .champion, .desc{
+        transform: scale(.8);
+    }
+    .champion-cont img{
+        width: 300px;
+    }
+    .champion2{
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: center;
+        height: 80vh;
+    }
+
+
+    .champion2 .bg-img{
+        width: 500vw;
+    }
+    .akaliDesc{
+        align-items: center;
+    }
+    .champAkali img{
+        width: 300px !important;
+    }
+    .akaliDesc p{
+        margin: 0 20px;
+        text-align: center;
+    }
+    .champ2{
+        flex-direction: column;
+        height: 150vh;
+    }
+    .champ2 > *{
+    }
+    .champ2 video{
+        height: 250px;
+    }
+    .bg-img2{
+        width: 550vw;
+    }
+    .mult-plays{}
+    .gameplay{
+        width: 90%;
+        /* margin-left: 100px; */
+        /* border: solid 1px red; */
+    }
+    .mainFooter{
+        height: 30vh !important;
+    }
+    .mainFooter .bgVideo{
+        height: 50vh;
+    }
+    footer .about{
+        flex-direction: column;
+    }
+    .comInfo p{
+        margin: 20px 50px;
+    }
+    .footerLinks{
+        flex-direction: column;
+    }
+}
